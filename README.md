@@ -49,12 +49,12 @@ The interface should allow a user to;
 
 #### SUBMISSION
 ---
-- Clone this repository.
+- Clone this repository.  Do NOT fork it.
 - Create the Cart as assigned/outlined above.
 - Gatsby, React, and Foundation Grid have already been included.
 - You can assume the cart will not need to handle more than 10 of each product.
 - Add documentation needed to install any packages, run the tests and code to this README or replace this README with one of your own with information on how to install and run code and tests.
-- Add your code to a github repository and share it with us.
+- Add your code to a github repository, share it with us or make it public, AND let us know (inviting someone to join a github project does not send a notification)
 
 
 #### Good luck!
