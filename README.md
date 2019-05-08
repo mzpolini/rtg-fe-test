@@ -1,12 +1,13 @@
-# Rooms To Go Engineering: React Take Home Assignment
+## Rooms To Go Engineering: React Take Home Assignment
 
-## How to Run
+#### How to Run
 ---
 - run `npm install`
 - run `gatsby develop`
 - http://localhost:8000
 
-## Expectation
+
+#### Expectation
 ---
 This at-home coding challenge is an opportunity for you to write some clean code that shows us how you use data structures to solve algorithmic problems.
 - Write code as if you were shipping it: Assume you are going to be code reviewed, articulate a test plan, etc.
@@ -18,7 +19,8 @@ This at-home coding challenge is an opportunity for you to write some clean code
 - Your solution should be self-contained and not assume other software is already installed (npm install is ok).
 - Got an idea for a cool feature to add? Do it! We love seeing your creative side.
 
-## Problem Statement
+
+#### Problem Statement
 ---
 Create a simple single page shopping cart web app.
 
@@ -44,7 +46,7 @@ The interface should allow a user to;
 - SEE the discount reflected in the total 
 
 
-## SUBMISSION
+#### SUBMISSION
 ---
 - Clone this repository.
 - Create the Cart as assigned/outlined above.
@@ -53,4 +55,5 @@ The interface should allow a user to;
 - Add documentation needed to install any packages, run the tests and code to this README or replace this README with one of your own with information on how to install and run code and tests.
 - Add your code to a github repository and share it with us.
 
-## Good luck!
+
+#### Good luck!
