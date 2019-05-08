@@ -2,7 +2,7 @@
 
 #### How to Run
 ---
-- run `npm install`
+- run `npm ci`
 - run `gatsby develop`
 - http://localhost:8000
 
