@@ -13,10 +13,10 @@ const Header = ({ siteTitle }) => (
       style={ {
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `0 1.0875rem`,
       } }
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 0, position: `relative` }}>
         <Link
           to="/"
           style={{
@@ -25,6 +25,21 @@ const Header = ({ siteTitle }) => (
           }}
         >
           { siteTitle }
+        </Link>
+        <Link
+          to="/cart"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+            fontSize: `1rem`,
+            float: `right`,
+            position: `absolute`,
+            top: `1.5rem`,
+            right: `1.0875rem`,
+            fontWeight: `700`
+          }}
+        >
+          CART
         </Link>
       </h1>
     </div>
