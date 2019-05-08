@@ -39,11 +39,12 @@ We will NOT evaluate UI interface so much as the behavior and state management. 
 
 The interface should allow a user to;
 - ADD an item to the shopping cart.
-- REMOVE items from the shopping cart
-- Change the quantity of items in the cart
-- SEE the Subtotal
-- SEE the Tax applied 
-- SEE the discount reflected in the total 
+- REMOVE items from the shopping cart.
+- UPDATE the quantity of items in the cart.
+- SHOW the Subtotal.
+- SHOW the Tax amount.
+- SHOW the Delivery amount.
+- SHOW the Total.
 
 
 #### SUBMISSION
