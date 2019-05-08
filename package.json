@@ -1,0 +1,32 @@
+{
+  "name": "rtg-fe-test",
+  "private": true,
+  "description": "A React with Gatsby Test",
+  "version": "0.1.0",
+  "author": "Jon Molinaro <jmolinaro@roomstogo.com>",
+  "dependencies": {
+    "gatsby": "^2.4.2",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-source-filesystem": "^2.0.33",
+    "gatsby-transformer-json": "^2.1.11",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.17.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  }
+}
