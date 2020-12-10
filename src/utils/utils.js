@@ -5,7 +5,6 @@
  */
 
 export const calculateTotals = (cart) => {
-  console.log('calculateTotals called with cart', cart);
   if (cart.length === 0) return [0, 0, 0, 0]
 
   const subtotal = cart.reduce((a, i) => {

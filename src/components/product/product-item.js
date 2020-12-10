@@ -9,7 +9,6 @@ import { useStore } from "../../store"
 
 const ProductItem = product => {
   const { addItem, cart } = useStore(state => state)
-  console.log('cart = ', cart);
   const handleAddItemClick = () => {
     addItem(product)
   }
