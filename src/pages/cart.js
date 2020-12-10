@@ -19,7 +19,7 @@ const Cart = () => {
     return (
       <Layout>
         <SEO title="Cart" />
-        <h1>Cart</h1>
+        <h1 data-testid="cart-title">Cart</h1>
         {
           data.length === 0 ? <div>No items</div> : data.map((c) => <CartItem { ...c } key={ c.sku } />)
         }
