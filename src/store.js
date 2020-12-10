@@ -70,7 +70,7 @@ export const useStore = create(set => ({
 
     set(state => {
       const nextCart = produce(state.cart, draft => {
-        draft.data[draft.data.findIndex((i) => i.sku === item.sku)].quantity = item.newQuantity
+        draft.data[draft.data.findIndex((i) => i.sku === item.sku)].quantity = Number(item.newQuantity)
         draft.loading = false
       })
       return {
