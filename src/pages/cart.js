@@ -3,7 +3,7 @@ import { useStore } from "../store"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CartItem from "../components/cart/cart-item"
-import CartTotals from "../components/cart/cartTotals"
+import CartTotals from "../components/cart/cart-totals"
 
 /**
  * Cart
