@@ -1,5 +1,12 @@
 ## Rooms To Go Engineering: React Take Home Assignment
 
+#### notes from Matt Polini
+* Will need to run npm install
+
+I spent a few cycles configuring tests but prematurely moved onto feature implementations because of time...  I dont feel good about this but my thinking was that the state config and other patterns will be better to facilitate discussion..
+
+I tried to keep it right at 4 hours.
+
 #### How to Run
 ---
 - Run `npm ci`
