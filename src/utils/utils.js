@@ -19,6 +19,21 @@ export const calculateTotals = (cart) => {
   const total = subtotal + shipping + tax
 
   //  TODO Floating Point Math here
-
   return [ subtotal, tax, shipping, total]
+}
+
+
+/**
+ * mockServerCall
+ * to show async behavior
+ * @returns {Promise}
+ */
+export const mockServerCall = () => {
+  console.log('mockServerCall');
+  return new Promise((resolve, rej) => {
+    setTimeout(() => {
+      console.log('about to resolve');
+      resolve()
+    }, 3000)
+  })
 }

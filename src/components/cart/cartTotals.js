@@ -10,22 +10,27 @@ import { calculateTotals } from "../../utils/utils"
  */
 
 const CartTotals = () => {
-  const cart = useStore(state => state.cart)
+  const { data, loading } = useStore(state => state.cart)
+
   const [{ subtotal, tax, shipping, total }, setTotals] = useState({})
 
   useEffect(() => {
-    let [ subtotal, tax, shipping, total ] = calculateTotals(cart)
+    let [ subtotal, tax, shipping, total ] = calculateTotals(data)
     setTotals({ subtotal, tax, shipping, total })
-  }, [cart])
-
-  return (
-    <>
-      <div>{`Subtotal $${subtotal}`}</div>
-      <div>{`Tax $${tax}`}</div>
-      <div>{`Shipping Cost $${shipping}`}</div>
-      <div>{`Total $${total}`}</div>
-    </>
-  )
+  }, [data])
+  
+  if (loading) {
+    return <div>Loading</div>
+  } else {
+    return (
+      <>
+        <div>{`Subtotal $${subtotal}`}</div>
+        <div>{`Tax $${tax}`}</div>
+        <div>{`Shipping Cost $${shipping}`}</div>
+        <div>{`Total $${total}`}</div>
+      </>
+    )
+  }
 }
 
 export default CartTotals

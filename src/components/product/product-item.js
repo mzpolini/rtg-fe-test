@@ -8,7 +8,11 @@ import { useStore } from "../../store"
  */
 
 const ProductItem = product => {
-  const addItem = useStore(state => state.addItem)
+  const { addItem, cart } = useStore(state => state)
+  console.log('cart = ', cart);
+  const handleAddItemClick = () => {
+    addItem(product)
+  }
 
   return (
     <div className="product cell small-12 grid-x grid-margin-x" id={ product.sku }>
@@ -17,10 +21,19 @@ const ProductItem = product => {
       <div className="product-sku cell small-2">{ product.sku }</div>
       <div className="product-price cell small-2">${ product.price }</div>
       <div className="product-add-to-cart cell small-2">
-          <button
-            id="add-to-cart"
-            onClick={() => addItem(product)}
-          > Add to Cart</button>
+          {
+            !cart.loading ? (
+              <button
+                id="add-to-cart"
+                onClick={handleAddItemClick}
+              > Add to Cart</button>
+            ) : (
+              <button
+                id="add-to-cart"
+                disabled={true}
+              >Loading...</button>
+            )
+          }
       </div>
     </div>
   )

@@ -11,18 +11,23 @@ import CartTotals from "../components/cart/cartTotals"
  */
 
 const Cart = () => {
-  const cart = useStore(state => state.cart)
+  const { loading, data } = useStore(state => state.cart)
 
-  return (
-    <Layout>
-      <SEO title="Cart" />
-      <h1>Cart</h1>
-      {
-        cart.length === 0 ? <div>No items</div> : cart.map((c) => <CartItem { ...c } key={ c.sku } />)
-      }
-      <CartTotals />
-    </Layout>
-  )
+  if (loading) {
+    return <div>Loading</div>
+  } else {
+    return (
+      <Layout>
+        <SEO title="Cart" />
+        <h1>Cart</h1>
+        {
+          data.length === 0 ? <div>No items</div> : data.map((c) => <CartItem { ...c } key={ c.sku } />)
+        }
+        <CartTotals />
+      </Layout>
+    )
+  }
+
 }
 
 export default Cart
