@@ -1,31 +1,15 @@
-## Rooms To Go Engineering: React Take Home Assignment
-
-#### notes from Matt Polini
-* Will need to run npm install
-
-I spent a few cycles configuring tests but prematurely moved onto feature implementations because of time...  I dont feel good about this but my thinking was that the state config and other patterns will be better to facilitate discussion..
-
-I tried to keep it right at 4 hours.
+## Rooms To Go Engineering: React/Gatsby Sandboxing
 
 #### How to Run
 ---
 - Run `npm ci`
 - Run `gatsby develop`
+-  Create a .env file at root that looks like below example
 - Navigate to http://localhost:8000 in your browser
 
-
-#### Expectation
----
-This at-home coding exercise is an opportunity for you to write some clean code that shows us how you use data structures to solve algorithmic problems.
-- Write code as if you were shipping it: Assume you are going to be code reviewed, articulate a test plan, etc.
-- We expect this solution to be written with React.
-- Use your preferred IDE or editor and whatever tooling you're comfortable with.
-- Feel free to use whatever references you'd like, including Google.
-- Your solution does NOT have to persist data between runs.
-- When you’re finished, make sure your code is committed to a personal github repo (either make it public or share it with us) with instructions on how to run it.
-- Your solution should be self-contained and not assume other software is already installed (npm install or npm ci is ok).
-- Got an idea for a cool feature to add? Do it! We love seeing your creative side.
-
+#### .env file config
+CONTENTFUL_ACCESS_TOKEN="muJu7wiDT7BapDXnltXtYalMWSU84hQbHzH7Sx0fHSY"
+CONTENTFUL_SPACE_ID="kb9wgir596y6"
 
 #### Problem Statement
 ---
