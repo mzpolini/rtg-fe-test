@@ -1,3 +1,7 @@
+require('dotenv').config({ path: `.env` })
+
+console.log('Gatsby Config..  env', JSON.stringify(process.env));
+
 module.exports = {
   siteMetadata: {
     title: `the Gatsby Sandbox`,
@@ -6,8 +10,9 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: 'kb9wgir596y6',
-        accessToken: 'muJu7wiDT7BapDXnltXtYalMWSU84hQbHzH7Sx0fHSY',
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        environment: 'master',
       },
     },
     {
