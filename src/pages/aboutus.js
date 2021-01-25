@@ -5,7 +5,7 @@ const Aboutus = () => {
     return (
         <>
             <Layout>
-                <h1>About Us Page with alyout</h1>
+                <h1>About Us Page with layout</h1>
             </Layout>
         </>
     )
