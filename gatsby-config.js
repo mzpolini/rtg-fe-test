@@ -1,7 +1,5 @@
 require('dotenv').config({ path: `.env` })
 
-console.log('Gatsby Config..  env', JSON.stringify(process.env));
-
 module.exports = {
   siteMetadata: {
     title: `the Gatsby Sandbox`,
